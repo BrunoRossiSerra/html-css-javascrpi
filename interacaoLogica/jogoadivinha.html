@@ -1,0 +1,32 @@
+<script>
+        function pularLinha(){
+        document.write("<br><br>");
+        }
+
+        function mostra(frase){
+            document.write(frase);
+            pularLinha();
+        }
+
+        var numeroPensado = Math.round(Math.random()*10);
+        var tentativa = 3;
+
+        while(tentativa >= 1){
+            var chute = parseInt(prompt("Que numero você pensou? "+numeroPensado));
+
+            if(chute == numeroPensado){
+                mostra("Voce acertou ");
+                break;
+            }else{
+                mostra("Você ainda não acerto ");
+            }
+            tentativa--;
+
+        }
+
+
+
+
+
+
+</script>
