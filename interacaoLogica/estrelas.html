@@ -1,12 +1,22 @@
 <script>
         function pularLinha(){
-        document.write("<br><br>");
+        document.write("<br>");
         }
 
         function mostra(frase){
             document.write(frase);
             pularLinha();
         }
+
+        for(var linha= 0; linha<=10;linha++){
+            for(coluna =1;coluna<10;coluna++){
+             document.write("*")
+            }
+            pularLinha();
+
+        }
+
+
 
 
 
